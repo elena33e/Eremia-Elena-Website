@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Ubuntu Mono';
     font-style: normal;
@@ -32,6 +33,16 @@ h1, h2, h3, h4{
     color: rgb(97, 57, 29);
 }
 
+a,
+a:hover,
+a:active
+{
+    text-decoration: none;
+    color: white;
+}
+
+/*Home page styling*/
+
 header{
     display: flex;
     justify-content: space-between;
@@ -44,14 +55,14 @@ header{
 
 li{
     display: inline;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .logo{
     display: inline;
 }
 
-main{
+.index-main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +103,7 @@ main{
 }
 
 #menu-section-title{
-    background-color: rgba(29, 91, 97, 0.67);
+    background-image: linear-gradient(to right, rgba(29, 91, 97, 0.7), rgba(29, 91, 97, 0.1));
     
 }
 
@@ -155,3 +166,119 @@ main{
 .menu-item-heading h3{
     color: white;
 }
+
+/*About page styling*/
+
+#projects-main,
+#about-main{
+    margin: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.projects-heading,
+.about-heading{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#projects-title,
+#about-me-title{
+    padding: 1rem 2rem ;
+    margin-bottom: 2rem;
+    background-image: linear-gradient(to right, rgba(29, 91, 97, 0.7), rgba(29, 91, 97, 0.1));
+    
+}
+
+#projects-subheading,
+#about-subheading{
+    width: 30rem;
+
+}
+
+.description-section{
+    padding: 3rem 2rem 3rem 0;
+    background-color: rgba(97, 57, 29, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+#about-photo{
+    flex-shrink: 2;
+    height: 100%;
+    width: 100%;
+}
+
+#about-description{
+    border-left: solid 3px #005961 ;
+    padding-left: 2rem;
+    flex-shrink: 1;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+    .description-section{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #about-photo{
+        width: 80%;
+        height: 80%;
+    }
+    
+}
+
+
+#projects-section-title,
+#skills-title{
+    padding: 0rem 5rem;
+}
+
+.projects-section,
+.skills-section{
+    margin: 0 5rem;
+    padding: 3rem 2rem 3rem 0;
+    background-color: rgba(97, 57, 29, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+}
+
+.skill-icon{
+    width: 3rem;
+    height: 3rem;
+}
+
+
+@media only screen and (max-width: 600px){
+    #about-main{
+        margin: 2rem 1rem;
+    }
+
+    .skills-section{
+        margin: 2rem 1rem;
+    }
+    
+}
+
+
+section{
+    margin-bottom: 4rem;
+}
+
+
+
+
+
+
+
