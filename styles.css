@@ -276,6 +276,78 @@ section{
     margin-bottom: 4rem;
 }
 
+/*Projects page styling*/
+
+
+.projects-section{
+    min-width: 250px;
+    padding-left: 2rem;
+}
+
+.project{
+    display: flex;
+    justify-content: left;
+    margin: 0 3rem;
+   
+}
+
+#projects-main{
+    margin-bottom: 3rem;
+}
+
+.project-photo{
+    height: 20rem;
+    width: 17rem;
+}
+
+.project-description{
+    width: 50%;
+    min-width: 10rem;
+    margin-left: 3rem;
+    border-left: solid 3px #005961;
+    padding-left: 2rem;
+    
+}
+
+.description{
+    margin-bottom: 1rem;
+
+}
+
+.project-btn{
+    padding: 0.7rem 1.2rem;
+    background-color: #005961;
+    border-radius: 0.5rem;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Cabin';
+
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .project{
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .project-description{
+        margin-left: 0;
+        margin-top: 2rem;
+        border-left: 0;
+        border-top: solid 3px #005961;
+
+    }
+
+    #projects-subheading{
+        width: 50%;
+    }
+}
+
+
+
 
 
 
